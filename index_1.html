@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Planinski odmor lux</title>
+<meta name="description" content="Apartman Planinski odmor lux na Zlatiboru, 10 minuta šetnje od jezera i centra, za do 4 osobe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --ground:#f4f5f2;
+  --surface:#ffffff;
+  --tint:#e6e1d6;
+  --ink:#1c2621;
+  --muted:#56625c;
+  --line:#d3d6cf;
+  --pine:#2e4a3d;
+  --pine-ink:#ffffff;
+  --oak:#9c6d27;
+  --gold:#9c6d27;
+  --gold-ink:#ffffff;
+  --marker:#c8322a;
+  --shadow:0 18px 40px -24px rgba(20,35,28,.45);
+  --display:"Manrope", system-ui, "Segoe UI", sans-serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#121815; --surface:#1a221e; --tint:#252d28; --ink:#eef1ec; --muted:#a6b1aa;
+    --line:#2f3a34; --pine:#7fb29a; --pine-ink:#0f1512; --oak:#d9ac62; --gold:#d9ac62; --gold-ink:#16120a; --marker:#ef5d52;
+    --shadow:0 18px 40px -24px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#121815; --surface:#1a221e; --tint:#252d28; --ink:#eef1ec; --muted:#a6b1aa;
+  --line:#2f3a34; --pine:#7fb29a; --pine-ink:#0f1512; --oak:#d9ac62; --gold:#d9ac62; --gold-ink:#16120a; --marker:#ef5d52;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(32px,4.6vw,48px)}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--oak)}
+:focus-visible{outline:2px solid var(--pine);outline-offset:3px;border-radius:2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--gold-ink);border:0;border-radius:2px;padding:15px 26px;font:700 13px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
+.btn.light:hover{background:rgba(255,255,255,.12)}
+.hero > .wrap{width:100%}
+/* header */
+header.top{position:absolute;inset-inline:0;top:env(safe-area-inset-top,0px);z-index:20;color:#fff}
+header.top .wrap{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-block:26px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:#fff;line-height:1}
+.logo svg{width:46px;height:34px;color:#d9ac62;margin-bottom:8px}
+.logo .l1{font-size:23px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.logo .l2{font-size:12.5px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;margin-top:5px}
+.logo .l3{font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#d9ac62;margin-top:8px}
+nav{display:flex;gap:34px;align-items:center;padding-top:10px}
+nav a{text-decoration:none;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.9);font-weight:500}
+nav a:hover{color:#fff}
+@media (max-width:760px){nav a:not(.cta-s){display:none}nav{padding-top:4px}}
+.cta-s{border:1px solid rgba(255,255,255,.5);padding:9px 14px;border-radius:2px}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;color:#fff;background:#1b2420 url(zima.jpg) center 40%/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+ linear-gradient(90deg,rgba(10,16,13,.82) 0%,rgba(10,16,13,.55) 38%,rgba(10,16,13,.05) 70%),
+ linear-gradient(180deg,rgba(10,16,13,.45) 0%,rgba(10,16,13,0) 26%,rgba(10,16,13,0) 58%,rgba(10,16,13,.88) 100%)}
+.hero-body{flex:1;display:flex;align-items:center;padding-block:150px 60px}
+.hero h1{font-size:clamp(46px,7vw,86px);line-height:1.02;letter-spacing:-.03em;font-weight:700;max-width:11ch;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.lede{margin-top:24px;font-size:clamp(17px,1.5vw,19px);color:rgba(255,255,255,.9);max-width:40ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);padding-block:22px 30px;border-top:1px solid rgba(255,255,255,.14)}
+.strip div{display:grid;grid-template-columns:32px 1fr;gap:14px;align-items:center;padding-inline:22px}
+.strip div:first-child{padding-left:0}
+.strip div+div{border-left:1px solid rgba(255,255,255,.22)}
+.strip svg{width:28px;height:28px;color:#fff;stroke-width:1.4}
+.strip b{display:block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.strip span{display:block;font-size:13.5px;color:rgba(255,255,255,.78);line-height:1.35;margin-top:3px}
+@media (max-width:980px){.strip{grid-template-columns:1fr 1fr;row-gap:18px}.strip div:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:520px){.strip{grid-template-columns:1fr}.strip div{padding-left:0!important;border-left:0!important}.hero-body{padding-block:140px 40px}}
+
+section{padding-block:clamp(64px,9vw,112px)}
+.sec-head{display:grid;gap:12px;margin-bottom:clamp(28px,4vw,44px);max-width:640px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:start}
+.about-text p+p{margin-top:16px}
+.about-text p{max-width:60ch}
+.rooms{display:grid;gap:0;border-top:1px solid var(--line)}
+.room{display:grid;grid-template-columns:120px 1fr;gap:16px;padding-block:18px;border-bottom:1px solid var(--line)}
+.room h3{font-size:19px}
+.room p{color:var(--muted);font-size:16px}
+.amen{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;padding:0;list-style:none}
+.amen li{background:var(--tint);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:500}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}.room{grid-template-columns:1fr;gap:4px}}
+
+/* gallery */
+.gallery{background:var(--surface);border-block:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(120px,15vw,190px);gap:10px}
+.grid button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;border-radius:var(--r);background:var(--tint)}
+.grid button:focus-visible{outline:2px solid var(--pine);outline-offset:3px}
+.grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.grid button:hover img{transform:scale(1.035)}
+.grid .lbl{position:absolute;left:10px;bottom:10px;background:rgba(15,22,18,.72);color:#fff;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;padding:4px 8px;border-radius:3px}
+.grid .g1{grid-column:span 4;grid-row:span 2}.grid .g2{grid-column:span 2;grid-row:span 2}
+.grid .g3,.grid .g4,.grid .g5{grid-column:span 2;grid-row:span 2}
+.grid .g6,.grid .g7,.grid .g8,.grid .g9,.grid .g10,.grid .g11{grid-column:span 3;grid-row:span 2}
+@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.grid button{grid-column:span 1!important;grid-row:span 1!important}.grid .g1{grid-column:span 2!important;grid-row:span 2!important}}
+@media (prefers-reduced-motion:reduce){.grid img{transition:none}}
+
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,12,10,.92);display:grid;grid-template-rows:auto 1fr auto;padding:calc(env(safe-area-inset-top,0px) + 12px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}
+.lb[hidden]{display:none}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;color:#e8ece9;font-family:var(--mono);font-size:13px}
+.lb figure{margin:0;display:grid;place-items:center;min-height:0}
+.lb img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:4px}
+.lb-nav{display:flex;justify-content:center;gap:12px}
+.lb button{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:var(--r);padding:10px 16px;font:500 15px var(--body);cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.2)}
+
+/* location */
+.loc-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:start}
+.signs{list-style:none;padding:0;margin:0;display:grid}
+.signs li{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:14px;padding-block:15px;border-bottom:1px dashed var(--line)}
+.signs li:first-child{border-top:1px dashed var(--line)}
+.mark{width:22px;height:22px;border-radius:50%;border:6px solid var(--marker);background:#fff}
+.signs .name{font-weight:600}
+.signs .name small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.signs .t{font-family:var(--mono);font-size:14px;color:var(--pine);white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{margin-top:16px;font-size:14px;color:var(--muted)}
+.loc-photo{margin:0}
+.loc-photo img{width:100%;display:block;border-radius:var(--r);aspect-ratio:4/3;object-fit:cover;box-shadow:var(--shadow)}
+.loc-photo figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.map{margin:0}
+.map-link{display:block;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.map svg{display:block;width:100%;height:auto}
+.map figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.m-ground{fill:var(--tint)}
+.m-forest circle{fill:color-mix(in srgb,var(--pine) 16%,var(--tint))}
+.m-lake{fill:#9cc3d6;stroke:#7fadc4;stroke-width:2}
+.m-road-o path{fill:none;stroke:var(--line);stroke-width:14;stroke-linecap:round}
+.m-road path{fill:none;stroke:var(--surface);stroke-width:9;stroke-linecap:round}
+.m-street path{fill:none;stroke:var(--surface);stroke-width:4;stroke-linecap:round}
+.m-trim{fill:none;stroke:var(--marker);stroke-width:2.5;stroke-dasharray:2 6;stroke-linecap:round}
+.m-route{fill:none;stroke:var(--gold);stroke-width:3;stroke-dasharray:8 7;stroke-linecap:round}
+.m-dot{fill:var(--ink)}
+.m-halo{fill:var(--gold);opacity:.18}
+.m-pin{fill:var(--gold)}
+.m-pin-in{fill:var(--surface)}
+.m-lbl{font:600 15px var(--body);fill:var(--ink);paint-order:stroke;stroke:var(--tint);stroke-width:4px;stroke-linejoin:round}
+.m-lbl.strong{font-weight:800}
+.m-lbl.small{font-size:12.5px;font-weight:600;fill:var(--muted)}
+.m-scale{fill:none;stroke:var(--ink);stroke-width:2}
+.map-link:hover{filter:brightness(1.03)}
+.loc-map{margin:0}
+.loc-map-link{position:relative;display:block;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.loc-map img{display:block;width:100%;height:auto}
+.here{position:absolute;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:6px;pointer-events:none}
+.here i{width:34px;height:34px;border-radius:50%;border:3px solid #d9ac62;box-shadow:0 0 0 4px rgba(0,0,0,.35)}
+.here b{position:absolute;top:44px;white-space:nowrap;background:#9c6d27;color:#fff;font-size:13px;font-weight:700;padding:5px 10px;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
+.map-zoom{display:block;position:relative;transform-origin:22.8% 26%;animation:mapzoom 16s ease-in-out infinite alternate}
+@keyframes mapzoom{from{transform:scale(1)}to{transform:scale(1.14)}}
+.here em{position:absolute;top:0;left:50%;width:34px;height:34px;margin-left:-17px;border-radius:50%;border:2px solid #d9ac62;animation:pulse 2.4s ease-out infinite;opacity:0}
+.here em+em{animation-delay:1.2s}
+@keyframes pulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.2);opacity:0}}
+.here i{position:relative;background:rgba(217,172,98,.25);animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.loc-map-link:hover .map-zoom{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){.map-zoom,.here em,.here i{animation:none}.here em{display:none}}
+.loc-map figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+@media (max-width:460px){.here b{font-size:11.5px;top:38px}.here i{width:26px;height:26px}}
+.maplink{display:inline-flex;margin-top:16px}
+@media (max-width:860px){.loc-grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:#18211d;color:#fff;--pine-ink:#fff}
+.contact .eyebrow{color:#d9ac62}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px)}
+.contact h2{color:inherit}
+.contact p.sub{margin-top:14px;opacity:.85;max-width:44ch}
+.cbox{margin-top:28px;display:grid;gap:10px}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid color-mix(in srgb,var(--pine-ink) 25%,transparent);padding-top:12px}
+.crow span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.crow b{font-weight:600;user-select:all;font-size:18px}
+form{background:var(--surface);color:var(--ink);border-radius:var(--r);padding:clamp(18px,3vw,28px);display:grid;gap:14px;box-shadow:var(--shadow)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:6px;font-size:14px;font-weight:600}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;width:100%}
+textarea{min-height:80px;resize:vertical}
+.out{background:var(--tint);border-radius:var(--r);padding:12px 14px;font-size:14.5px;white-space:pre-wrap}
+.status{font-size:14px;color:var(--ink);min-height:1.2em}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:460px){.facts span{font-size:12.5px}}
+
+/* telefon */
+.mnav[hidden]{display:none}
+.menu-btn{display:none}
+.mbar{display:none}
+@media (max-width:760px){
+  nav .cta-s{display:none}
+  .menu-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(10,16,13,.35);color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:2px;padding:10px 14px;font:600 12.5px var(--body);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+  .menu-btn svg{width:16px;height:16px}
+  header.top .wrap{padding-block:18px;align-items:center}
+  .logo svg{width:36px;height:27px;margin-bottom:6px}
+  .logo .l1{font-size:17px}
+  .logo .l2{font-size:10.5px;letter-spacing:.28em;margin-top:4px}
+  .logo .l3{display:none}
+  .mnav{position:absolute;top:100%;left:16px;right:16px;background:#18211d;border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:8px;display:grid;box-shadow:0 20px 40px -10px rgba(0,0,0,.6)}
+  .mnav a{color:#fff;text-decoration:none;font-weight:600;font-size:17px;padding:14px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .mnav a:last-child{border-bottom:0;color:#d9ac62}
+  .hero-body{padding-block:130px 36px}
+  .hero h1{font-size:44px}
+  .hero-cta{display:grid;grid-template-columns:1fr;gap:10px}
+  .hero-cta .btn{width:100%}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 16px calc(env(safe-area-inset-bottom,0px) + 10px);background:color-mix(in srgb,var(--ground) 94%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s ease}
+  .mbar.on{transform:none}
+  .mbar .btn{flex:1}
+  footer{padding-bottom:96px}
+  .here b{top:32px}
+}
+@media (prefers-reduced-motion:reduce){.mbar{transition:none}}
+
+/* telefon: dorada */
+.contact-grid>*,.row2>*,form{min-width:0}
+input,select,textarea{min-width:0;max-width:100%}
+.swipe-hint{display:none}
+@media (max-width:760px){
+  body{font-size:16px}
+  section{padding-block:56px}
+  .sec-head{margin-bottom:24px;gap:8px}
+  h2{font-size:30px}
+  .hero{background-position:62% 50%}
+  .hero::before{background:linear-gradient(180deg,rgba(10,16,13,.7) 0%,rgba(10,16,13,.5) 35%,rgba(10,16,13,.55) 60%,rgba(10,16,13,.92) 100%)}
+  .hero h1{font-size:42px;max-width:none}
+  .lede{font-size:17px;margin-top:16px}
+  .hero-cta{margin-top:24px}
+  .strip{grid-template-columns:1fr 1fr!important;gap:18px 14px;padding-block:18px 24px}
+  .strip div{grid-template-columns:1fr!important;align-items:start;align-content:start;gap:8px;padding:0!important;border:0!important}
+  .strip svg{width:24px;height:24px;color:#d9ac62}
+  .strip b{font-size:11.5px}
+  .strip span{font-size:13px}
+  .about-text p{font-size:16px}
+  .amen{margin-top:22px;gap:6px}
+  .amen li{font-size:13.5px;padding:6px 12px}
+  .rooms{margin-top:8px}
+  .room{padding-block:14px}
+  .room h3{font-size:17px}
+  .room p{font-size:15px}
+  /* galerija kao traka za prevlačenje */
+  .gallery .wrap{padding-inline:0}
+  .gallery .sec-head{padding-inline:16px}
+  .grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;padding:0 16px 6px;scroll-padding-inline:16px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .grid::-webkit-scrollbar{display:none}
+  .grid button{flex:0 0 82%;height:auto;aspect-ratio:4/5;scroll-snap-align:start}
+  .grid .lbl{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:0;padding:5px 10px}
+  .grid button:hover img{transform:none}
+  .swipe-hint{display:flex;justify-content:space-between;align-items:center;padding:12px 16px 0;font-size:13.5px;color:var(--muted)}
+  .swipe-hint b{font-family:var(--mono);font-weight:500;color:var(--ink)}
+  .signs li{padding-block:13px}
+  .loc-grid{gap:28px}
+  .maplink{width:100%}
+  .contact-grid{gap:28px}
+  .crow b{font-size:17px}
+  form{padding:18px;gap:12px}
+  .lb img{max-height:70vh}
+  .lb-nav button{flex:1}
+}
+@media (max-width:360px){.row2{grid-template-columns:1fr!important}.hero h1{font-size:36px}}
+
+footer{padding-block:28px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Planinski odmor lux, početak">
+      <svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 32 L17 10 L24 19 L31 9 L44 32"/><path d="M26 32 V23 H34 V32"/><path d="M31 9 V4 H35 V14"/></svg>
+      <span class="l1">Planinski odmor</span>
+      <span class="l2">Lux Zlatibor</span>
+      <span class="l3">Apartman za do 4 osobe</span>
+    </a>
+    <nav aria-label="Glavna navigacija">
+      <a href="#top">Početna</a>
+      <a href="#apartman">Apartman</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#lokacija">Lokacija</a>
+      <a class="cta-s" href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Meni</button>
+    <div class="mnav" id="mnav" hidden>
+      <a href="#apartman">Apartman</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#lokacija">Lokacija</a>
+      <a href="#kontakt">Zakaži termin</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-body">
+      <div>
+        <h1>Vaš odmor na Zlatiboru.</h1>
+        <p class="lede">Uređen apartman u mirnom delu Zlatibora, na 10 minuta šetnje od jezera i centra. Za parove, porodice i društvo do četiri osobe.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#kontakt">Rezervišite</a>
+          <a class="btn light" href="#galerija">Pogledajte fotografije</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="strip">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><p><b>Mirna lokacija</b><span>10 min do jezera i centra</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg><p><b>Do 4 osobe</b><span>Spavaća soba i dnevna</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1"/><path d="M8 21h8M12 17v4"/></svg><p><b>TV i brzi internet</b><span>HBO, Apolon, kablovska</span></p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.2 3.8 21.3"/><path d="M20 3c-1 6-4 11-12 13 0-6 4-11 12-13z"/></svg><p><b>Sve u blizini</b><span>Pekara, marketi, trim staza</span></p></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="apartman">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <div class="sec-head">
+          <p class="eyebrow">Apartman</p>
+          <h2>Miran kraj, a sve je blizu</h2>
+        </div>
+        <p>Apartman se nalazi u mirnom delu Zlatibora, u zgradi okruženoj borovima. Do jezera i centra stižete za desetak minuta laganom šetnjom, a sve što vam treba za svaki dan je na par minuta od vrata.</p>
+        <p>Spavaća soba je odvojena, sa francuskim ležajem. U dnevnoj sobi je ugaona garnitura koja se razvlači, pa apartman udobno prima do četiri osobe.</p>
+        <ul class="amen" aria-label="Sadržaj apartmana">
+          <li>Brzi internet</li>
+          <li>Kablovska TV</li>
+          <li>HBO</li>
+          <li>Apolon</li>
+          <li>Dečji kanali</li>
+          <li>Opremljena kuhinja</li>
+          <li>Terasa</li>
+          <li>Centralno grejanje</li>
+        </ul>
+      </div>
+      <div class="rooms">
+        <div class="room"><h3>Spavaća soba</h3><p>Francuski ležaj, veliki plakar sa kliznim vratima, noćni stočići i lampe. TV na zidu sa kablovskom televizijom.</p></div>
+        <div class="room"><h3>Dnevna soba</h3><p>Ugaona garnitura na razvlačenje za još dve osobe, trpezarijski sto za četvoro i TV sa filmskim i dečjim paketima.</p></div>
+        <div class="room"><h3>Kuhinja</h3><p>Ugradni elementi, mikrotalasna, kuvalo za vodu, sudopera i posuđe.</p></div>
+        <div class="room"><h3>Kupatilo</h3><p>Tuš kabina i grejač za peškire.</p></div>
+        <div class="room"><h3>Terasa</h3><p>Sto i stolice sa pogledom na borovu šumu i krovove Zlatibora.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerija" class="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Galerija · 11 fotografija</p>
+        <h2>Pogledajte apartman</h2>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="swipe-hint" aria-hidden="true"><span>Prevucite za još fotografija</span><b id="gcount">1 / 11</b></p>
+    </div>
+  </section>
+
+  <section id="lokacija">
+    <div class="wrap loc-grid">
+      <div>
+        <div class="sec-head">
+          <p class="eyebrow">Lokacija</p>
+          <h2>Sve možete obići peške</h2>
+        </div>
+        <ul class="signs">
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Jezero<small>Šetalište oko Zlatiborskog jezera</small></span><span class="t">10 min</span></li>
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Centar Zlatibora<small>Kraljev trg, restorani, prodavnice</small></span><span class="t">10 min</span></li>
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Trim staza<small>Za šetnju ili trčanje</small></span><span class="t">par min</span></li>
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Pekara</span><span class="t">par min</span></li>
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Dva marketa i mesara</span><span class="t">par min</span></li>
+          <li><i class="mark" aria-hidden="true"></i><span class="name">Kafić</span><span class="t">par min</span></li>
+        </ul>
+        <p class="note">Vremena su za laganu šetnju od ulaza u zgradu.</p>
+      </div>
+      <figure class="loc-map">
+        <a class="loc-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Planinski+Odmor+Lux+Zlatibor" target="_blank" rel="noopener" aria-label="Otvori Planinski odmor lux u Google mapama">
+          <span class="map-zoom">
+          <img src="mapa.jpg" alt="Satelitski snimak mape Zlatibora sa označenim apartmanom Planinski odmor lux" width="1045" height="914">
+          <span class="here" style="left:22.8%;top:26%" aria-hidden="true"><i></i><em></em><em></em><b>Planinski odmor lux</b></span>
+          </span>
+        </a>
+        <figcaption>Kliknite na mapu da otvorite lokaciju u Google mapama.</figcaption>
+        <a class="btn ghost maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Planinski+Odmor+Lux+Zlatibor" target="_blank" rel="noopener">Otvori u Google mapama ↗</a>
+      </figure>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Rezervacija</p>
+        <h2 style="margin-top:12px">Javite nam datume</h2>
+        <p class="sub">Pozovite ili pošaljite poruku na Viber ili WhatsApp. Upit možete sastaviti ispod i kopirati ga u poruku.</p>
+        <div class="cbox">
+          <div class="crow"><span>Telefon</span><b id="phone">+381 00 000 0000</b></div>
+          <div class="crow"><span>Viber / WhatsApp</span><b>isti broj</b></div>
+        </div>
+      </div>
+      <form id="upit" novalidate>
+        <div class="row2">
+          <label for="dolazak">Dolazak<input id="dolazak" type="date" required></label>
+          <label for="odlazak">Odlazak<input id="odlazak" type="date" required></label>
+        </div>
+        <div class="row2">
+          <label for="osobe">Broj osoba
+            <select id="osobe"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
+          </label>
+          <label for="ime">Ime<input id="ime" type="text" autocomplete="name" placeholder="Vaše ime"></label>
+        </div>
+        <label for="napomena">Napomena<textarea id="napomena" placeholder="Npr. dolazimo sa detetom od 5 godina"></textarea></label>
+        <div class="out" id="out" hidden></div>
+        <button class="btn" type="submit" id="kopiraj">Zakaži termin</button>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Planinski odmor lux · Zlatibor, Srbija</span>
+    <span>Apartman za do 4 osobe</span>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a class="btn" href="#kontakt">Zakaži termin</a></div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Fotografija">
+  <div class="lb-bar"><span id="lbcap"></span><button id="lbclose" type="button">Zatvori ✕</button></div>
+  <figure><img id="lbimg" alt=""></figure>
+  <div class="lb-nav"><button id="lbprev" type="button">← Prethodna</button><button id="lbnext" type="button">Sledeća →</button></div>
+</div>
+
+<script>
+(function(){
+  var photos=[
+    ["dnevna-2","Dnevna soba i trpezarija"],
+    ["balkon","Terasa"],
+    ["spavaca-1","Spavaća soba"],
+    ["spavaca-2","Francuski ležaj"],
+    ["kuhinja","Kuhinja"],
+    ["trpezarija","Trpezarija"],
+    ["spavaca-3","Pogled iz spavaće sobe"],
+    ["kupatilo","Kupatilo"],
+    ["dnevna","Dnevna soba"],
+    ["zgrada","Zgrada"],
+    ["zima","Pogled zimi"]
+  ];
+  var grid=document.getElementById('grid');
+  photos.forEach(function(p,i){
+    var b=document.createElement('button');
+    b.type='button';b.className='g'+(i+1);
+    b.setAttribute('aria-label','Otvori fotografiju: '+p[1]);
+    b.innerHTML='<img loading="lazy" src="'+p[0]+'.jpg" alt="'+p[1]+'"><span class="lbl">'+p[1]+'</span>';
+    b.addEventListener('click',function(){open(i)});
+    grid.appendChild(b);
+  });
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),cur=0,last=null;
+  function show(){img.src=''+photos[cur][0]+'.jpg';img.alt=photos[cur][1];cap.textContent=(cur+1)+' / '+photos.length+' · '+photos[cur][1];}
+  function open(i){cur=i;last=document.activeElement;show();lb.hidden=false;document.getElementById('lbclose').focus();}
+  function close(){lb.hidden=true;if(last)last.focus();}
+  function step(d){cur=(cur+d+photos.length)%photos.length;show();}
+  document.getElementById('lbclose').onclick=close;
+  document.getElementById('lbprev').onclick=function(){step(-1)};
+  document.getElementById('lbnext').onclick=function(){step(1)};
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target.tagName==='FIGURE')close();});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);});
+
+  // brojač i prevlačenje
+  var gc=document.getElementById('gcount');
+  grid.addEventListener('scroll',function(){var w=grid.firstElementChild.getBoundingClientRect().width+10;gc.textContent=(Math.min(photos.length,Math.round(grid.scrollLeft/w)+1))+' / '+photos.length;},{passive:true});
+  var tx=null;
+  lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)step(dx<0?1:-1);tx=null;});
+
+  // telefon: meni i donja traka
+  var mb=document.getElementById('menuBtn'),mn=document.getElementById('mnav');
+  mb.addEventListener('click',function(){var o=mn.hidden;mn.hidden=!o;mb.setAttribute('aria-expanded',String(o));});
+  mn.addEventListener('click',function(e){if(e.target.tagName==='A'){mn.hidden=true;mb.setAttribute('aria-expanded','false');}});
+  var bar=document.getElementById('mbar'),hero=document.querySelector('.hero'),kon=document.getElementById('kontakt');
+  function upd(){var h=hero.getBoundingClientRect().bottom,k=kon.getBoundingClientRect();var inK=k.top<innerHeight&&k.bottom>0;bar.classList.toggle('on',h<0&&!inK);}
+  addEventListener('scroll',upd,{passive:true});upd();
+
+  // upit
+  var f=document.getElementById('upit'),out=document.getElementById('out'),st=document.getElementById('status');
+  var d1=document.getElementById('dolazak'),d2=document.getElementById('odlazak');
+  function fmt(v){if(!v)return '__.__.';var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]+'.';}
+  function noci(){if(!d1.value||!d2.value)return null;var n=Math.round((new Date(d2.value)-new Date(d1.value))/864e5);return n>0?n:null;}
+  function build(){
+    var n=noci(),ime=document.getElementById('ime').value.trim(),nap=document.getElementById('napomena').value.trim();
+    var t='Zdravo, zanima me apartman Planinski odmor lux na Zlatiboru.\n'+
+      'Dolazak: '+fmt(d1.value)+'  Odlazak: '+fmt(d2.value)+(n?'  ('+n+(n===1?' noć':(n<5?' noći':' noćenja'))+')':'')+'\n'+
+      'Broj osoba: '+document.getElementById('osobe').value+
+      (nap?'\nNapomena: '+nap:'')+
+      '\nDa li je apartman slobodan i koja je cena?'+(ime?'\n'+ime:'');
+    out.textContent=t;return t;
+  }
+  var today=new Date(),a=new Date(today.getTime()+14*864e5),b=new Date(today.getTime()+17*864e5);
+  function iso(d){return d.toISOString().slice(0,10);}
+  d1.min=iso(today);d2.min=iso(today);
+  if(!d1.value)d1.value=iso(a);if(!d2.value)d2.value=iso(b);
+  f.addEventListener('input',function(){st.textContent='';build();});
+  build();
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(d1.value&&d2.value&&!noci()){st.textContent='Datum odlaska treba da bude posle datuma dolaska.';return;}
+    var t=build();
+    function sel(){out.hidden=false;var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);st.textContent='Tekst je označen. Kopirajte ga i pošaljite na broj iznad.';}
+    try{navigator.clipboard.writeText(t).then(function(){st.textContent='Upit je kopiran. Nalepite ga u poruku na broj iznad.';},sel);}catch(err){sel();}
+  });
+})();
+</script>
+
+</body>
+</html>
